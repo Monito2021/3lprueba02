@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 from django.urls import reverse_lazy
 
@@ -24,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$06o0@8&fha82@mckyr%d5c%m-9qbmagtsar@_w1)jvr%=6-h6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['3lprueba02.azurewebsites.net','127.0.0.1','http://127.0.0.1:8000/']
 
