@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['3lprueba02.azurewebsites.net','127.0.0.1','http://127.0.0.1:8000/']
 
-
 # Application definition
 
 INSTALLED_APPS = [
