@@ -28,7 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['3lprueba02.azurewebsites.net','127.0.0.1','http://127.0.0.1:8000/']
 
+
 CSRF_TRUSTED_ORIGINS = ['https://3lprueba02.azurewebsites.net']
+
 
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
