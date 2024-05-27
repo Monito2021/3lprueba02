@@ -29,6 +29,12 @@ DEBUG = False
 # ALLOWED_HOSTS = ['3lprueba02.azurewebsites.net','127.0.0.1','localhost']
 ALLOWED_HOSTS = ['localhost','127.0.0.1','3lprueba03.azurewebsites.net','129.146.186.147']
 
+CSRF_TRUSTED_ORIGINS = ['https://3lprueba03.azurewebsites.net']
+
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 # Application definition
 
 INSTALLED_APPS = [
