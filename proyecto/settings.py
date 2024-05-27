@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
 import os
 from pathlib import Path
 from django.urls import reverse_lazy
@@ -27,15 +26,10 @@ SECRET_KEY = 'django-insecure-$06o0@8&fha82@mckyr%d5c%m-9qbmagtsar@_w1)jvr%=6-h6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['3lprueba02.azurewebsites.net','127.0.0.1','http://127.0.0.1:8000/']
+# ALLOWED_HOSTS = ['3lprueba02.azurewebsites.net','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','3lprueba02.azurewebsites.net']
 
 
-CSRF_TRUSTED_ORIGINS = ['https://3lprueba02.azurewebsites.net']
-
-
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
 
 # Application definition
 
@@ -131,9 +125,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Media files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,"media")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_REDIRECT_URL = reverse_lazy('home')
+
