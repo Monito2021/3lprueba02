@@ -31,8 +31,8 @@ ALLOWED_HOSTS = ['localhost','127.0.0.1','3lprueba03.azurewebsites.net','129.146
 
 CSRF_TRUSTED_ORIGINS = ['https://3lprueba03.azurewebsites.net']
 
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
 CSRF_COOKIE_SECURE = True
 
 # Application definition
