@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$06o0@8&fha82@mckyr%d5c%m-9qbmagtsar@_w1)jvr%=6-h6
 DEBUG = False
 
 # ALLOWED_HOSTS = ['3lprueba02.azurewebsites.net','127.0.0.1','localhost']
-ALLOWED_HOSTS = ['localhost','127.0.0.1','3lprueba02.azurewebsites.net']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','3lprueba03.azurewebsites.net','129.146.186.147']
 
 
 
